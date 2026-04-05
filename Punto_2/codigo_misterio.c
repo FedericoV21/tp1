@@ -1,45 +1,45 @@
 #include <stdio.h>
 
-void f_alpha(int *p) {
-    int temp = *p;
-    int rev = 0;
+void invertirNumeros(int *numero) {
+    int temp = *numero;
+    int invertido = 0;
     while (temp > 0) {
-        rev = (rev * 10) + (temp % 10);
+        invertido = (invertido * 10) + (temp % 10);
         temp = temp / 10;
     }
-    *p = rev;
+    *numero = invertido;
 }
 
-void f_beta(int *p) {
-    *p = *p / 2;
+void dividirPorDos(int *numero) {
+    *numero = *numero / 2;
 }
 
-void f_gamma(int *p) {
-    int temp = *p;
+void sumarNumeros(int *numero) {
+    int temp = *numero;
     int suma = 0;
     while (temp > 0) {
         suma = suma + (temp % 10);
         temp = temp / 10;
     }
-    *p = *p + suma;
+    *numero = *numero + suma;
 }
 
-void procesar_enigma(int *valor_referencia) {
-    f_alpha(valor_referencia);
-    f_beta(valor_referencia);
-    f_gamma(valor_referencia);
+void procesarNumero(int *numero) {
+    invertirNumeros(numero);
+    dividirPorDos(numero);
+    sumarNumeros(numero);
 }
 
 int main() {
-    int dato_secreto = 452;
-    
-    printf("Iniciando depuracion con el valor: %d\n", dato_secreto);
-    
-    // Instrucción para el alumno: 
+    int numero = 452;
+
+    printf("Iniciando depuracion con el valor: %d\n", numero);
+
+    // Instrucción para el alumno:
     // Pon un breakpoint aquí (F9) y usa F11 (Step Into) para entrar a cada función.
-    procesar_enigma(&dato_secreto);
-    
-    printf("Resultado final del enigma: %d\n", dato_secreto);
-    
+    procesarNumero(&numero);
+
+    printf("Resultado final del procesamiento: %d\n", numero);
+
     return 0;
 }
