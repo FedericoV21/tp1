@@ -59,3 +59,11 @@ Changes to be committed:
 
 ¿Cuál cree que no hace falta que esté? 
  .exe
+
+# Reflexión sobre resultados (apartados 2, 3 y 4)
+
+Si resolvió correctamente los apartados 2 y 3 del punto anterior notará que el resultado es el mismo. Esto se debe a que ambos códigos, aunque escritos de forma diferente o con errores corregidos, implementan la misma lógica de procesamiento sobre los números: invierten los dígitos, dividen por dos y suman los dígitos al resultado. Por eso, el valor final obtenido es igual.
+
+En el punto 4, lo que se obtiene es el listado de archivos presentes en el repositorio, incluyendo los archivos fuente (.c) y ejecutables (.exe). El resultado no es igual a los anteriores porque aquí no se realiza una operación matemática, sino una verificación de los archivos gestionados por git.
+
+Por lo tanto, los resultados de los puntos 2 y 3 coinciden porque el algoritmo es el mismo, mientras que el punto 4 es diferente porque se refiere al control de versiones y no a la lógica del programa.
