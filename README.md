@@ -49,3 +49,13 @@ b) Errores encontrados y soluciones:
     - Error típico: Usar variables sin asignarles un valor.
     - Solución: Inicializar todas las variables antes de usarlas.
 
+# Punto 4: 
+Revise los archivos subidos en su repositorio de github. ¿Qué archivos 
+vé?
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   tp1_1.c
+        new file:   tp1_1.exe
+
+¿Cuál cree que no hace falta que esté? 
+ .exe
